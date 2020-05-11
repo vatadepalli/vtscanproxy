@@ -1,0 +1,17 @@
+service: vtscanproxy
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+
+functions:
+  vtscanproxy:
+    handler: handler.scan
+    events:
+      - http: ANY /scan
+      - http: 'ANY scan/{proxy+}'
+  vtscanresultproxy:
+      handler: handler.result
+      events:
+        - http: ANY /result
+        - http: 'ANY result/{proxy+}'
