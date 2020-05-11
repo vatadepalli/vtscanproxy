@@ -1,17 +1,16 @@
 {
   "name": "vtscanproxy",
   "version": "1.0.0",
-  "description": "",
+  "description": "An API mirror for virustotal to tunnel through protected networks.",
   "main": "handler.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon app"
   },
   "keywords": [],
-  "author": "",
+  "author": "@vatadepalli",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.19.2",
     "https": "^1.0.0",
     "querystring": "^0.2.0"
   },
